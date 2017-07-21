@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get "/" do
-  if params.has_key? :nombre != ""
+  if params.has_key? :nombre || params[:nombre] != ""
     nombre = params[:nombre].capitalize
     "<h1>Hola #{nombre}!<h1>"
   else
