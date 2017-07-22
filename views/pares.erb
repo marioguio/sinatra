@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Hola</h1>
+    <div class="">
+
+
+    <% (1..50).each  do   |i| %>
+    <div>
+    <%if i%2 == 0 %>
+
+      <%= i %> Soy Par!
+
+      <%end%>
+      </div>
+       <div>
+     <%if i%2 != 0 %>
+
+      <%= i %> Soy Impar!
+
+     <%end%>
+     </div>
+    <%end%>
+    </div>
+  </body>
+</html>

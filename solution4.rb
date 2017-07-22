@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
- erb :pares
+  "HcUy6Re2LLBRtj"
 end
