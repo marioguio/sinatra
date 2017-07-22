@@ -1,11 +1,11 @@
 require 'sinatra'
-#en el primer reto en el get use '/'
-get "/makers/:nombre" do
-  if params.has_key? :nombre || params[:nombre] != ""
-    nombre = params[:nombre].capitalize
-    "<h1>Hola #{nombre}!<h1>"
-  else
-    "<h1>Hola desconocido!<h1>"
-  end
 
+get '/' do
+  erb :index
+end
+
+post '/saludar' do
+  #esta es la ruta post saludar
+  @nombre = params[:nombre]
+  erb :saludar
 end
