@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <% if @number %>
-  <h1>Mi cuenta es : <%= @number %></h1>
-<% else %>
-  <h1>Mi cuenta es : 0</h1>
-  <% @number = 0 %>
-<% end %>
-<form action="/">
-  <input type="hidden" value="<%= @number.to_i + 1 %>" name="number">
-  <input type="submit" value="Suma">
-</form>
-  </body>
+<head>
+<meta charset="UTF-8">
+<title>Abuela Sorda</title>
+</head>
+
+<body>
+  <h1>Abuela Sorda </h1>
+    <p>Di algo abuela</p>
+
+  <form action="/" method="post">
+    <input type="text" name="abuela" value="">
+    <input type="submit" name="enviar" value="Dilo!!">
+</body>
 </html>
